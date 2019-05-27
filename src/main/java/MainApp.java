@@ -2,7 +2,7 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-        final int ROW_LENGTH = 4;
+        final int NUMBER_OF_MULTIPLIERS = 4;
 
         String data = "";
         try {
@@ -10,7 +10,8 @@ public class MainApp {
         } catch (Exception e){
             e.getStackTrace();
         }
-        String biggestFactor = Calculator.calculate4factor(data, ROW_LENGTH);
-        System.out.println(biggestFactor);
+
+        System.out.println(
+                Calculator.calculate4factor(data, NUMBER_OF_MULTIPLIERS));
     }
 }
